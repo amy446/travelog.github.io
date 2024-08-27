@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Travlog</title>
+     <link rel="icon" href="images/logo3.png">
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/e42076725f.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <section id="hero">
+          <div class="container">
+               <nav>
+                    <i class="fa-solid fa-bars" onclick=ShowSidebar()></i>
+                    <div class="logo">
+                         <img src="images/logo.png" alt="logo">
+                         <p class="logo-text">Travlog</p>
+                    </div>
+                    <ul class="sidebar">
+                         <li><i class="fa-solid fa-xmark" onclick=hidesidebar()></i></li>
+                         <li><a href="">Home</a></li>
+                         <li><a href="">Discover</a></li>
+                         <li><a href="">Special Deals</a></li>
+                         <li><a href="">Contact</a></li>
+                         
+                    </ul>
+                    <ul class="nav-links">
+                         <li><a href="" class="hide">Home</a></li>
+                         <li><a href="" class="hide">Discover</a></li>
+                         <li><a href="" class="hide">Special Deals</a></li>
+                         <li><a href="" class="hide">Contact</a></li>
+
+                    </ul>
+                    <div class="nav-btn">
+                         <a href="" class="white-btn">Log In</a>
+                         <a href="" class="purple-btn">Sign Up</a>
+                    </div>
+               </nav>
+               <div class="hero-content">
+                    <div class="hero-row">
+                         <div class="hero-text">
+                              <div class="btn">
+                                   <a href="">Explore the world!</a>
+                                   <img src="images/bag.svg" alt="bag">
+                              </div>
+                              <h1>Travel <span>top destination</span> of the world</h1>
+                              <p>We always make our customer happy by <br>providing as many choices as possible </p>
+                              <div class="hero-btn">
+                                   <a href="" class="purple-btn">Get Started</a>
+                                   <div class="white-btn">
+                                        <img src="images/play.svg" alt="play-btn">
+                                        <a href="">Watch Demo</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="hero-img">
+                              <img src="images/globe bg.png" alt="bg" class="globe">
+                              <img src="images/globe bg 2.png">
+                              <div class="icons">
+                                   <img src="images/hero-bg.png" class="people">
+                                   <img src="images/hero-bg 2.png">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section id="sponsor">
+          <div class="container">
+               <div class="sponsor-row">
+                    <div class="sponsor-col first">
+                         <img src="images/advisor.png" alt="advisor">
+                         <img src="images/expedia.png" alt="expedia">
+                         <img src="images/booking.png" alt="booking">
+                    </div>
+                    <div class="sponsor-col second">
+                         <img src="images/airbnb.png" alt="airbnb">
+                         <img src="images/orbitz.png" alt="orbitz">
+                    </div>
+               </div>
+          </div>
+          
+     </section>
+
+     <section id="service">
+          <div class="container">                        
+               <div class="service-row">
+                    <div class="service-txt">
+                         <h5>Services</h5>
+                         <h3>Our top value categories for you</h3>
+                    </div>
+                    <div class="service-cards">
+                         <div class="card">
+                              <img src="images/destination 1.png" alt="icon">
+                              <h6>Best Tour Guide</h6>
+                              <p>What looked like a small patch of purple grass, above five feet.<p>
+                         </div>
+                        
+                         <div class="card">
+                              <img src="images/booking 1.png" alt="icon">
+                              <h6>Easy Booking</h6>
+                              <p>Square, was moving across the sand in their direction.<p>
+                         </div>          
+                         <div class="card overflow">
+                              <img src="images/cloudy 1.png" alt="icon">
+                              <h6>Weather Forecast</h6>
+                              <p>What looked like a small patch of purple grass, above five feet.<p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <script>
+          function ShowSidebar(){
+               const sidebar = document.querySelector('.sidebar')
+               sidebar.style.display ='flex'
+          }
+          function hidesidebar(){
+               const sidebar = document.querySelector('.sidebar')
+               sidebar.style.display ='none'
+          }
+     </script>
+</body>
+</html>
